@@ -1,26 +1,3 @@
----
-title: "Day 1"
-author:
-output: 
-  html_document:
-    code_download: FALSE
-    code_folding: "hide"
-    theme:
-      bootswatch: journal
-    toc: TRUE
-    toc_float: TRUE
----
-
-```{=html}
-<style>
-h1.title {
-  text-align: center;
-}
-</style>
-```
-
-<br><br>
-
 # Welcome to day 1!
 
 -   In this workshop, we will try to mix theory and R coding, but our main focus will be on understanding the *why*. All applications should be driven by thinking first.
@@ -29,9 +6,9 @@ h1.title {
 
     -   Day 1: Linear models
 
-    -   Day 2: Non-linear models
+    -   Day 2: Nonlinear models
 
-    -   Day 3: Bayesian non-linear models
+    -   Day 3: Bayesian nonlinear models
 
 -   More importantly, **don't panic!** We will be learning together, slowly. We do not expect you to come into the workshop (or leave it) knowing everything.
 
@@ -110,7 +87,7 @@ Other examples of linear models are:
 
 **Polynomial regression:**
 
-Extend the linear regression in a way that the relationship between the predictors and the response is non-linear. A polynomial function is a special case of base function[^2].
+Extend the linear regression in a way that the relationship between the predictors and the response is nonlinear. A polynomial function is a special case of base function[^2].
 
 [^2]: Base function is a known function of the predictor ($x$) that gets its own coefficient in a linear model. In short, a mathematical transformation of the predictor. For example, the linear model $y_i = \beta_0 + \beta_1x_i + \varepsilon_i$ can be written as $y_i = \beta_0 * 1 + \beta_1 * x + \varepsilon_i$, in which the base functions ($b$) are $b_0(x) = 1$ and $b_1(x) = x$. For polynomial regression, for example, the base function could be represented as $b_d(x_i) = x_i^d$, with $d$ being the polynomial degree.
 
@@ -198,7 +175,7 @@ Checklist:
 
 -   All parameters are outside nonlinear functions? X -\> $e^{\beta_1x_i}$
 
-How do we work with non-linear models?
+How do we work with nonlinear models?
 
 -   Fit it as it is.
 
@@ -799,7 +776,7 @@ Steps:
 
 -   Using the bootstrap distribution of desired statistics calculate the 95% CI
 
-#### Pre-day 2 - Non-linear models
+#### Pre-day 2 - Nonlinear models
 
 **I.** Fit an logistic model to the data of plant disease progress over time in "nonlin.csv".
 
@@ -818,7 +795,7 @@ $$
 logit(y_i) = \beta_0 + \beta_1*x_i + \varepsilon_i
 $$
 
-Where $\beta_1 \sim r$ from the non-linear form.
+Where $\beta_1 \sim r$ from the nonlinear form.
 
 ```{r, message=FALSE, warning=FALSE, eval=FALSE}
 # Example for 2024

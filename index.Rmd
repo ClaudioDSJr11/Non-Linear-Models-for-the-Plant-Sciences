@@ -1,60 +1,20 @@
---- 
-title: "A Minimal Book Example"
-author: "John Doe"
+---
+title: "Non-Linear Models for the Plant Sciences"
+author: "Claudio Dias da Silva Jr & Trevor Hefley"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+  An applied introduction to nonlinear models for the plant sciences, with
+  emphasis on interpretation, uncertainty, and conscient implementation in R.
 link-citations: yes
-github-repo: rstudio/bookdown-demo
 ---
 
 # About
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+This material is the base for the workshop **Nonlinear Models for the Plant Sciences** taught at Kansas State University on the Spring of 2026. This workshop was develop as a collaboration from the Department of Statistics, Department of Plant Pathology and the Institute for Digital Agriculture & Advanced Analytics (ID3A) as part of the [Advanced Analytics Workshops](https://www.k-state.edu/engagement/innovation-and-partnerships/interdisciplinary-institutes/digital-ag-advanced-analytics/about/events.html) series.
 
-## Usage 
+## Motivation
 
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
-
-Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
-
-The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
-
-## Render book
-
-You can render the HTML version of this example book without changing anything:
-
-1. Find the **Build** pane in the RStudio IDE, and
-
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
-
-Or build the book from the R console:
-
-```{r, eval=FALSE}
-bookdown::render_book()
-```
-
-To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
-
-## Preview book
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
-
-```{r eval=FALSE}
-bookdown::serve_book()
-```
-
-
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+Non-linear models are widely used in plant sciences. Just like linear models, non-linear models can be fitted to data to enable statistical inference, which is required for scientific investigations and can aid when making management decisions. For example, logistic disease progression curves are a non-linear model used to understand plant disease epidemics, and statistical estimation and inference are needed to connect field data to management decisions (e.g., when to spray fungicide). “Non-Linear Models for the Plant Sciences” is designed to help you develop an understanding of non-linear models and how they fit data using common statistical techniques such as maximum likelihood estimation and Bayesian estimation. This workshop is co-hosted by the Departments of Statistics and Plant Pathology.

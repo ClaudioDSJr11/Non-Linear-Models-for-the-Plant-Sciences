@@ -4,29 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Day 3</title>
-  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+  <title>Non-Linear Models for the Plant Sciences</title>
+  <meta name="description" content="<p>An applied introduction to nonlinear models for the plant sciences, with
+emphasis on interpretation, uncertainty, and conscient implementation in R.</p>" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Day 3" />
+  <meta property="og:title" content="Non-Linear Models for the Plant Sciences" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  <meta property="og:description" content="<p>An applied introduction to nonlinear models for the plant sciences, with
+emphasis on interpretation, uncertainty, and conscient implementation in R.</p>" />
+  
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Day 3" />
+  <meta name="twitter:title" content="Non-Linear Models for the Plant Sciences" />
   
-  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+  <meta name="twitter:description" content="<p>An applied introduction to nonlinear models for the plant sciences, with
+emphasis on interpretation, uncertainty, and conscient implementation in R.</p>" />
   
 
-<meta name="author" content="" />
+<meta name="author" content="Claudio Dias da Silva Jr &amp; Trevor Hefley" />
 
 
 <meta name="date" content="2026-01-27" />
@@ -37,7 +34,7 @@ set in the _output.yml file.</p>" />
   
   
 
-<link rel="next" href="hello-bookdown.html"/>
+<link rel="next" href="welcome-to-day-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -147,21 +144,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">Nonlinear Models for the Plant Sciences</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a>
 <ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#usage"><i class="fa fa-check"></i>Usage</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i>Render book</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#preview-book"><i class="fa fa-check"></i>Preview book</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="hello-bookdown.html"><a href="hello-bookdown.html"><i class="fa fa-check"></i>Hello bookdown</a>
-<ul>
-<li class="chapter" data-level="" data-path="hello-bookdown.html"><a href="hello-bookdown.html#a-section"><i class="fa fa-check"></i>A section</a>
-<ul>
-<li class="chapter" data-level="" data-path="hello-bookdown.html"><a href="hello-bookdown.html#an-unnumbered-section"><i class="fa fa-check"></i>An unnumbered section</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#motivation"><i class="fa fa-check"></i>Motivation:</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="welcome-to-day-1.html"><a href="welcome-to-day-1.html"><i class="fa fa-check"></i>Welcome to day 1!</a>
 <ul>
@@ -178,7 +166,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="welcome-to-day-2.html"><a href="welcome-to-day-2.html"><i class="fa fa-check"></i>Welcome to Day 2!!</a>
 <ul>
-<li class="chapter" data-level="" data-path="welcome-to-day-2.html"><a href="welcome-to-day-2.html#non-linear-models"><i class="fa fa-check"></i>Non-linear models</a>
+<li class="chapter" data-level="" data-path="welcome-to-day-2.html"><a href="welcome-to-day-2.html#nonlinear-models"><i class="fa fa-check"></i>Nonlinear models</a>
 <ul>
 <li class="chapter" data-level="" data-path="welcome-to-day-2.html"><a href="welcome-to-day-2.html#exercises-from-day-1"><i class="fa fa-check"></i>1. Exercises from day 1</a></li>
 <li class="chapter" data-level="" data-path="welcome-to-day-2.html"><a href="welcome-to-day-2.html#working-with-weakly-identifiable-parameters"><i class="fa fa-check"></i>2. Working with weakly identifiable parameters</a></li>
@@ -188,15 +176,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="welcome-to-day-3.html"><a href="welcome-to-day-3.html"><i class="fa fa-check"></i>Welcome to day 3!!!</a>
 <ul>
-<li class="chapter" data-level="" data-path="welcome-to-day-3.html"><a href="welcome-to-day-3.html#bayesian-non-linear-models"><i class="fa fa-check"></i>Bayesian Non-linear models</a>
+<li class="chapter" data-level="" data-path="welcome-to-day-3.html"><a href="welcome-to-day-3.html#bayesian-nonlinear-models"><i class="fa fa-check"></i>Bayesian Nonlinear models</a>
 <ul>
 <li class="chapter" data-level="" data-path="welcome-to-day-3.html"><a href="welcome-to-day-3.html#exercises-from-day-2"><i class="fa fa-check"></i>1. Exercises from day 2</a></li>
-<li class="chapter" data-level="" data-path="welcome-to-day-3.html"><a href="welcome-to-day-3.html#bayesian-non-linear-models-1"><i class="fa fa-check"></i>2. Bayesian non-linear models</a></li>
+<li class="chapter" data-level="" data-path="welcome-to-day-3.html"><a href="welcome-to-day-3.html#bayesian-nonlinear-models-1"><i class="fa fa-check"></i>2. Bayesian nonlinear models</a></li>
 <li class="chapter" data-level="" data-path="welcome-to-day-3.html"><a href="welcome-to-day-3.html#wrap-up"><i class="fa fa-check"></i>3. Wrap-up</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://github.com/ClaudioDSJr11/Non-Linear-Models-for-the-Plant-Sciences" target="_blank">View source on GitHub</a></li>
 
 </ul>
 
@@ -207,7 +195,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Day 3</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Non-Linear Models for the Plant Sciences</a>
           </h1>
         </div>
 
@@ -216,38 +204,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">Day 3</h1>
-<p class="author"><em></em></p>
+<h1 class="title">Non-Linear Models for the Plant Sciences</h1>
+<p class="author"><em>Claudio Dias da Silva Jr &amp; Trevor Hefley</em></p>
 <p class="date"><em>2026-01-27</em></p>
 </div>
 <div id="about" class="section level1 hasAnchor">
 <h1>About<a href="index.html#about" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This is a <em>sample</em> book written in <strong>Markdown</strong>. You can use anything that Pandoc’s Markdown supports; for example, a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
-<div id="usage" class="section level2 hasAnchor">
-<h2>Usage<a href="index.html#usage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Each <strong>bookdown</strong> chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter <em>must</em> start with a first-level heading: <code># A good chapter</code>, and can contain one (and only one) first-level heading.</p>
-<p>Use second-level and higher headings within chapters like: <code>## A short section</code> or <code>### An even shorter section</code>.</p>
-<p>The <code>index.Rmd</code> file is required, and is also your first book chapter. It will be the homepage when you render the book.</p>
-</div>
-<div id="render-book" class="section level2 hasAnchor">
-<h2>Render book<a href="index.html#render-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>You can render the HTML version of this example book without changing anything:</p>
-<ol style="list-style-type: decimal">
-<li><p>Find the <strong>Build</strong> pane in the RStudio IDE, and</p></li>
-<li><p>Click on <strong>Build Book</strong>, then select your output format, or select “All formats” if you’d like to use multiple formats from the same book source files.</p></li>
-</ol>
-<p>Or build the book from the R console:</p>
-<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" tabindex="-1"></a>bookdown<span class="sc">::</span><span class="fu">render_book</span>()</span></code></pre></div>
-</details>
-<p>To render this example to PDF as a <code>bookdown::pdf_book</code>, you’ll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.org/tinytex/" class="uri">https://yihui.org/tinytex/</a>.</p>
-</div>
-<div id="preview-book" class="section level2 hasAnchor">
-<h2>Preview book<a href="index.html#preview-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in “Preview book”, or from the R console:</p>
-<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="index.html#cb2-1" tabindex="-1"></a>bookdown<span class="sc">::</span><span class="fu">serve_book</span>()</span></code></pre></div>
-</details>
+<p>This material is the base for the workshop <strong>Nonlinear Models for the Plant Sciences</strong> taught at Kansas State University on the Spring of 2026. This workshop was develop as a collaboration from the Department of Statistics, Department of Plant Pathology and the Institute for Digital Agriculture &amp; Advanced Analytics (ID3A) as part of the <a href="https://www.k-state.edu/engagement/innovation-and-partnerships/interdisciplinary-institutes/digital-ag-advanced-analytics/about/events.html">Advanced Analytics Workshops</a> series.</p>
+<div id="motivation" class="section level2 hasAnchor">
+<h2>Motivation:<a href="index.html#motivation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Non-linear models are widely used in plant sciences. Just like linear models, non-linear models can be fitted to data to enable statistical inference, which is required for scientific investigations and can aid when making management decisions. For example, logistic disease progression curves are a non-linear model used to understand plant disease epidemics, and statistical estimation and inference are needed to connect field data to management decisions (e.g., when to spray fungicide). “Non-Linear Models for the Plant Sciences” is designed to help you develop an understanding of non-linear models and how they fit data using common statistical techniques such as maximum likelihood estimation and Bayesian estimation. This workshop is co-hosted by the Departments of Statistics and Plant Pathology.</p>
 
 </div>
 </div>
@@ -257,7 +223,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 
-<a href="hello-bookdown.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="welcome-to-day-1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -288,8 +254,8 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
-    "text": "Edit"
+    "link": null,
+    "text": null
   },
   "history": {
     "link": null,

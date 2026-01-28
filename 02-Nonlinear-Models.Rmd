@@ -1,26 +1,3 @@
----
-title: "Day 2"
-author:
-output: 
-  html_document:
-    code_download: FALSE
-    code_folding: "hide"
-    theme:
-      bootswatch: journal
-    toc: TRUE
-    toc_float: TRUE
----
-
-```{=html}
-<style>
-h1.title {
-  text-align: center;
-}
-</style>
-```
-
-<br><br>
-
 # Welcome to Day 2!!
 
 Yesterday we:
@@ -41,7 +18,7 @@ Yesterday we:
 
 -   Discussed briefly when they are equal (e.g., normal errors) and when they are not.
 
-## Non-linear models
+## Nonlinear models
 
 <div>
 
@@ -93,7 +70,7 @@ par(mfrow = c(1, 1))
 
 **What is it really about?**
 
-<center>![](images/Rust.jpg){width="700"}</center>
+<center>![](Rust.jpg){width="700"}</center>
 
 -   Two years/seasons: 2023 and 2024
 
@@ -162,7 +139,7 @@ $$
 
 -   $r$
 
-    -   Multiply $x_i$, but is on an **exponential**, each unit change in $\mathbf{x}$ is multiplicative in the growth (differential equation[^1]).
+    -   Multiply $x_i$, but is on an **exponential**, each unit change in $\mathbf{x}$ is multiplicative in the growth (differential equation[^02-nonlinear-models-1]).
 
     -   Affects shape and trajectory of the entire curve.
 
@@ -172,7 +149,7 @@ $$
 
     -   Estimation sensitive to information on the data, often correlated with $K$.
 
-[^1]: $\frac{dy}{dt} = \mathbf{ry}(1-\frac{\mathbf{y}}{\mathbf{K}})$
+[^02-nonlinear-models-1]: $\frac{dy}{dt} = \mathbf{ry}(1-\frac{\mathbf{y}}{\mathbf{K}})$
 
 The actual linearized model:
 
@@ -254,9 +231,9 @@ $$
 \varepsilon_i \sim i.i.d. N(0, \sigma^2)
 $$
 
-This way we can get Wald confidence intervals[^2].
+This way we can get Wald confidence intervals[^02-nonlinear-models-2].
 
-[^2]: Wald CI measure local uncertainty (around the parameter estimate) and not at the whole parameter space (all values it could assume - global), therefore, they might be more optimistic than global CI. Bootstrap or Bayesian approach would provide more closely a global uncertainty measure once they explore a broader region of the parameter space.
+[^02-nonlinear-models-2]: Wald CI measure local uncertainty (around the parameter estimate) and not at the whole parameter space (all values it could assume - global), therefore, they might be more optimistic than global CI. Bootstrap or Bayesian approach would provide more closely a global uncertainty measure once they explore a broader region of the parameter space.
 
 <br><br>
 
@@ -274,7 +251,7 @@ What is identifiability?
 
     -   What it is - Example
 
-    -   Why is it very important in non-linear models
+    -   Why is it very important in nonlinear models
 
 To understand what is causes, look at the parameters of our model for both years:
 
@@ -526,7 +503,7 @@ knitr::kable(df_table, align = "c") %>%
 
 -   Which models did we use?
 
-    -   Logistic Disease Progress Curve (non-linear, mechanistic):
+    -   Logistic Disease Progress Curve (nonlinear, mechanistic):
 
     $$
     y_i = \frac{K}{1 + (\frac{K - y_0}{y_0})e^{-r*x_i + \varepsilon_i}}
@@ -567,7 +544,7 @@ df <- read.csv("nonlin.csv")
 df$p_sev <- df$severity/100
 ```
 
-**I.** For 2023, fit the non-linear logistic model to variety a and b. Extract $K$ and $r$ and discuss the effect of genetic resistance in these parameters.
+**I.** For 2023, fit the nonlinear logistic model to variety a and b. Extract $K$ and $r$ and discuss the effect of genetic resistance in these parameters.
 
 ```{r, message=FALSE, warning=FALSE, eval=FALSE}
 # Let's fit the model for each variety individually

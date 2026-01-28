@@ -1,26 +1,3 @@
----
-title: "Day 3"
-author:
-output: 
-  html_document:
-    code_download: FALSE
-    code_folding: "hide"
-    theme:
-      bootswatch: journal
-    toc: TRUE
-    toc_float: TRUE
----
-
-```{=html}
-<style>
-h1.title {
-  text-align: center;
-}
-</style>
-```
-
-<br><br>
-
 # Welcome to day 3!!!
 
 What have we learned so far?
@@ -49,7 +26,7 @@ What have we learned so far?
 
 <br><br>
 
-## Bayesian Non-linear models
+## Bayesian Nonlinear models
 
 <div>
 
@@ -59,7 +36,7 @@ What have we learned so far?
 
     -   Questions I and IV - Model selection, why?
 
-2.  Bayesian non-linear models
+2.  Bayesian nonlinear models
 
     -   Bayesian logistic disease progress curve
     -   Why use Bayesian?
@@ -84,7 +61,7 @@ df$p_sev <- df$severity/100
 
 #### Questions I and IV - Model selection, why?
 
-**I.** For 2023, fit the non-linear logistic model to variety a and b. Extract $K$ and $r$ and discuss the effect of genetic resistance in these parameters.
+**I.** For 2023, fit the nonlinear logistic model to variety a and b. Extract $K$ and $r$ and discuss the effect of genetic resistance in these parameters.
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 # Data
@@ -180,7 +157,7 @@ Why don't we use this model instead? I have been pushing the logistic model for 
 
 <br><br>
 
-### 2. Bayesian non-linear models
+### 2. Bayesian nonlinear models
 
 -   Data alone was insufficient, we need more assumptions!
 
@@ -188,15 +165,15 @@ Why don't we use this model instead? I have been pushing the logistic model for 
 
     -   When data was insufficient, we made assumptions:
 
-        -   $K = 1$ + Non-linear logistic model.
+        -   $K = 1$ + Nonlinear logistic model.
 
         -   $K = 1$ + Linearization.
 
-            -   Assume the non-linear relationship is well approximated by a linear one.
+            -   Assume the nonlinear relationship is well approximated by a linear one.
 
-            -   Assume inference on linearized model parameters is equivalent to the non-linear.
+            -   Assume inference on linearized model parameters is equivalent to the nonlinear.
 
-            -   Mechanistic meaning of the non-linear model is preserved.
+            -   Mechanistic meaning of the nonlinear model is preserved.
 
 \*Bayesian makes assumptions explicit vs previous approaches.
 
@@ -222,9 +199,9 @@ And this reads: $y_i$ arises from a normal distribution with **expectation** con
 
 -   What is expectation? It is **where the distribution centers**, the **mean**.
 
-$\mathbf{y}$ is a random variable[^04-bayesian-non-linear-models-1] that arises from a distribution.
+$\mathbf{y}$ is a random variable[^04-bayesian-nonlinear-models-1] that arises from a distribution.
 
-[^04-bayesian-non-linear-models-1]: By definition, a random variable assigns a numerical value to the outcome of a random experiment.
+[^04-bayesian-nonlinear-models-1]: By definition, a random variable assigns a numerical value to the outcome of a random experiment.
 
 Now, what have we been doing so far with the logistic model?
 
@@ -414,9 +391,9 @@ par_post <- as.matrix(samples[,c(1, 2, 3, 4)])
 pred_post <- as.matrix(samples[,c(5:61)])
 ```
 
-How the predictions (expected value) looks like with 95% Posterior Predictive Interval[^04-bayesian-non-linear-models-2]:
+How the predictions (expected value) looks like with 95% Posterior Predictive Interval[^04-bayesian-nonlinear-models-2]:
 
-[^04-bayesian-non-linear-models-2]: Intervals:
+[^04-bayesian-nonlinear-models-2]: Intervals:
 
     -   Credible Interval (Bayesian) - An interval that contains a given proportion (95% in the example) of the posterior distribution, representing the probability that the parameter lies within that range given the model and the data. It is a global interval considering the parameter space (all values the parameter can assume).
 
