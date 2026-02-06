@@ -1,5 +1,5 @@
 ---
-title: "Non-Linear Models for the Plant Sciences"
+title: "Nonlinear Models for the Plant Sciences"
 author: "Claudio Dias da Silva Jr & Trevor Hefley"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
